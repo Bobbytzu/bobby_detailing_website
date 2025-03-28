@@ -16,7 +16,7 @@ This is a long long description
 ::custom-separator{separator-text="Servicii Oferite"}
 ::
 
-::servicii{limit="2"}
+::services{limit="2"}
 ::
 
 ::custom-separator
@@ -28,7 +28,7 @@ image1:
   src: /porsche_red.jpeg
   alt: Detailing Bentley
 image2:
-  src: /Bentley_after.jpeg
+  src: /porsche_blue.jpeg
   alt: Detailing Bentley
 ---
 #title

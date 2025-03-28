@@ -18,7 +18,7 @@ const props = withDefaults(defineProps<{
         :items="props.images"
         class="w-full h-[540px]"
     >
-      <NuxtImg :src="item.src" :alt="item.alt" fit="cover" format="webp" width="1920" height="580" class="rounded-lg"/>
+      <NuxtImg :src="item.src" :alt="item.alt" fit="cover" format="webp" width="1920" height="540" class="rounded-lg"/>
     </UCarousel>
     <div class="w-full pl-10 pb-10 flex absolute bottom-0 text-xl md:text-2xl lg:text-3xl font-bold uppercase tracking-wide">
       <slot name="title"/>

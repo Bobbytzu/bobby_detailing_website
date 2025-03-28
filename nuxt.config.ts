@@ -4,12 +4,6 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
     compatibilityDate: '2024-11-01',
-    devtools: {
-        enabled: true,
-        timeline: {
-            enabled: true,
-        },
-    },
     modules: [
         '@nuxt/ui',
         '@nuxt/icon',
@@ -23,7 +17,7 @@ export default defineNuxtConfig({
     ],
     app: {
         head: {
-            title: 'Bobby`s detail service',
+            title: 'Auto Detail Iasi',
             htmlAttrs: {
                 lang: 'en',
             },
@@ -33,6 +27,24 @@ export default defineNuxtConfig({
                 {rel: 'icon', type: 'image/png', sizes: '96x96', href: '/favicon-96x96.png'},
                 {rel: 'manifest', href: '/site.webmanifest'},
             ]
+        },
+    },
+    $production: {
+        image: {
+            provider: 'vercel',
+        }
+    },
+    $env: {
+        staging: {
+            image: {
+                provider: 'vercel',
+            }
+        }
+    },
+    devtools: {
+        enabled: true,
+        timeline: {
+            enabled: true,
         },
     },
     scripts: {
@@ -51,10 +63,7 @@ export default defineNuxtConfig({
         }
     },
     image: {
-        screens: {
-            icon: 40,
-            icon2x: 80
-        }
+        provider: 'ipx', // Default provider for development
     },
     colorMode: {
         preference: 'dark', // default value of $colorMode.preference

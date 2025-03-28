@@ -32,7 +32,7 @@
 </template>
 
 <script setup>
-import Servicii from "~/components/servicii/ServiciiList.vue"
+import Servicii from "~/components/servicii/Service.vue"
 import BeforeAfter from "~/components/content/BeforeAfter.vue";
 import Hero_section from "~/components/main_page/Hero_section.vue";
 

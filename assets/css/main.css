@@ -1,0 +1,59 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static{
+    --color-gold-50: #ffffe7;
+    --color-gold-100: #feffc1;
+    --color-gold-200: #fffd86;
+    --color-gold-300: #fff441;
+    --color-gold-400: #ffe60d;
+    --color-gold-500: #ffd700;
+    --color-gold-600: #d19e00;
+    --color-gold-700: #a67102;
+    --color-gold-800: #89580a;
+    --color-gold-900: #74480f;
+    --color-gold-950: #442604;
+
+    --color-silver-50: #f7f7f7;
+    --color-silver-100: #f0f0f0;
+    --color-silver-200: #e3e3e3;
+    --color-silver-300: #d1d1d1;
+    --color-silver-400: #c0c0c0;
+    --color-silver-500: #aaaaaa;
+    --color-silver-600: #969696;
+    --color-silver-700: #818181;
+    --color-silver-800: #6a6a6a;
+    --color-silver-900: #585858;
+    --color-silver-950: #333333;
+
+    --dark-bg: #091a28;
+    --dark-bg-secondary: #071521;
+    --border-color: #0d2538;
+
+    --ui-bg: var(--dark-bg);
+    --ui-primary: var(--color-gold-600);
+    --ui-secondary:var(--color-silver-400);
+
+}
+:root{
+    --ui-bg: var(--dark-bg);
+    --ui-text: var(--color-silver-100);
+    --ui-primary: var(--color-gold-600);
+    --ui-secondary:var(--color-silver-400);
+    --ui-border: var(--color-gold-600);
+}
+
+.dark-mode{
+    --color: var(--color-gold-600);
+    --color-primary: var(--color-gold-600);
+    --color-secondary: var(--color-silver-400);
+}
+
+body {
+    background-color: var(--dark-bg);
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: var(--color-gold-600);
+    text-decoration: none;
+}

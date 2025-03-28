@@ -1,12 +1,11 @@
 ::header-carousel
 ---
 images:
-- src: /background/audi_a7_oh.jpg
-  alt: "A beautiful sunrise"
-- src: /background/audi_rs7_inside.jpg
-  alt: "A scenic mountain view"
+  - src: /background/audi_a7_oh.jpg
+    alt: A beautiful sunrise
+  - src: /background/audi_rs7_inside.jpg
+    alt: A scenic mountain view
 ---
-
 #title
 Finest auto detailing Iasi
 
@@ -14,31 +13,23 @@ Finest auto detailing Iasi
 This is a long long description
 ::
 
-::custom-separator
----
-separatorText: Servicii Oferite
----
+::custom-separator{separator-text="Servicii Oferite"}
 ::
 
-::servicii
----
-limit: 2
----
+::servicii{limit="2"}
 ::
-
 
 ::custom-separator
 ::
-
 
 ::before-after
 ---
 image1:
-  src: /porsche_red.jpeg,
-  alt: "Detailing Bentley"
+  src: /porsche_red.jpeg
+  alt: Detailing Bentley
 image2:
-  src: /Bentley_after.jpeg,
-  alt: "Detailing Bentley"
+  src: /Bentley_after.jpeg
+  alt: Detailing Bentley
 ---
 #title
 The Everest custom title
@@ -53,10 +44,10 @@ This is a long long description
 ::hero-content
 ---
 images:
-- src: /background/audi_a7_oh.jpg
-  alt: "A beautiful sunrise"
-- src: /background/audi_rs7_inside.jpg
-  alt: "A scenic mountain view"
+  - src: porsche_blue.jpeg
+    alt: A beautiful sunrise
+  - src: /background/audi_rs7_inside.jpg
+    alt: A scenic mountain view
 ---
 #title
 Modul meu de lucru

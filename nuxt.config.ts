@@ -1,15 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+// noinspection JSUnusedGlobalSymbols
+
 import Aura from '@primeuix/themes/aura';
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
     compatibilityDate: '2024-11-01',
-    devtools: {
-        enabled: true,
-        timeline: {
-            enabled: true,
-        },
-    },
     modules: [
         '@nuxt/ui',
         '@nuxt/icon',
@@ -23,7 +19,7 @@ export default defineNuxtConfig({
     ],
     app: {
         head: {
-            title: 'Bobby`s detail service',
+            title: 'Auto Detail Iasi',
             htmlAttrs: {
                 lang: 'en',
             },
@@ -35,25 +31,24 @@ export default defineNuxtConfig({
             ]
         },
     },
-    scripts: {
-        registry: {
-            googleTagManager: {
-                id: 'G-Y0NJVKM8YW'
-            }
-        }
+    devtools: {
+        enabled: true,
+        timeline: {
+            enabled: true,
+        },
     },
     css: ["~/assets/css/main.css"],
     vite: {plugins: [tailwindcss(),]},
     components: true, // Ensure auto-import of components
+    image: {
+        screens:{
+            icon:70,
+            icon2x:140
+        }
+    },
     content: {
         preview: {
             api: 'https://api.nuxt.studio'
-        }
-    },
-    image: {
-        screens: {
-            icon: 40,
-            icon2x: 80
         }
     },
     colorMode: {

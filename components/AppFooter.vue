@@ -33,15 +33,19 @@
             </li>
             <li class="flex flex-row items-center gap-1">
               <Icon name="ic:baseline-facebook"/>
-              <ULink as="button" color="secondary" target="_blank"
-                     to="https://www.facebook.com/profile.php?id=100075685908141">
+              <ULink
+                  as="button" color="secondary" target="_blank"
+                  to="https://www.facebook.com/profile.php?id=100075685908141"
+              >
                 <p>Facebook: Detailing Auto Iasi</p>
               </ULink>
             </li>
             <li class="flex flex-row items-center gap-1">
               <Icon name="mdi:instagram"/>
-              <ULink as="button" color="secondary" target="_blank"
-                     to="https://www.instagram.com/detailing_auto_iasi/">
+              <ULink
+                  as="button" color="secondary" target="_blank"
+                  to="https://www.instagram.com/detailing_auto_iasi/"
+              >
                 <p>Instagram: Detailing Auto Iasi</p>
               </ULink>
             </li>
@@ -60,7 +64,6 @@
 
       <div class="w-4/5">
         <iframe
-            allowfullscreen="allowfullscreen"
             height="480" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2633.780067036085!2d27.53879244748227!3d47.1978818947063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40caf926f7015381%3A0x3270c605d6c190ae!2sDetailing%20Auto%20Iasi!5e0!3m2!1sro!2sro!4v1741341760081!5m2!1sro!2sro"
             style="border:0;"

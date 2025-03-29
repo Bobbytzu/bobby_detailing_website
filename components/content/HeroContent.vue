@@ -16,9 +16,9 @@ const props = withDefaults(defineProps<{
         <h3 class="text-3xl font-bold">
           <slot name="title"/>
         </h3>
-        <p class="py-6">
+        <div class="py-6">
           <slot name="description"/>
-        </p>
+        </div>
       </div>
 
       <UCarousel

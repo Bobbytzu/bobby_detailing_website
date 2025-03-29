@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+// noinspection JSUnusedGlobalSymbols
+
 import Aura from '@primeuix/themes/aura';
 import tailwindcss from "@tailwindcss/vite";
 
@@ -37,7 +39,7 @@ export default defineNuxtConfig({
     $env: {
         staging: {
             image: {
-                provider: 'vercel',
+                provider: 'cloudinary',
             }
         }
     },
@@ -46,13 +48,6 @@ export default defineNuxtConfig({
         timeline: {
             enabled: true,
         },
-    },
-    scripts: {
-        registry: {
-            googleTagManager: {
-                id: 'G-Y0NJVKM8YW'
-            }
-        }
     },
     css: ["~/assets/css/main.css"],
     vite: {plugins: [tailwindcss(),]},
@@ -63,7 +58,9 @@ export default defineNuxtConfig({
         }
     },
     image: {
-        provider: 'ipx', // Default provider for development
+        cloudinary: {
+            baseURL: 'https://res.cloudinary.com/dmfrnlqsb/image/fetch'
+        }
     },
     colorMode: {
         preference: 'dark', // default value of $colorMode.preference

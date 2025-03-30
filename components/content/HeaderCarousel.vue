@@ -16,9 +16,9 @@ const props = withDefaults(defineProps<{
         loop
         :autoplay="{ delay: 5000 }"
         :items="props.images"
-        class="w-full overflow-y-hidden"
+        class="w-full"
     >
-      <NuxtImg :src="item.src" :alt="item.alt" fit="cover" format="webp" width="1920px" height="590px" densities="x1 x2" class="rounded-lg"/>
+      <NuxtImg :src="item.src" :alt="item.alt" format="webp" width="1920px" densities="x1 x2" class="rounded-lg max-h-[200px] md:max-h-[350px] lg:max-h-[450px] xl:max-h-[550px] object-cover"/>
     </UCarousel>
     <div class="w-full pl-10 pb-10 flex absolute bottom-0 text-xl md:text-2xl lg:text-3xl font-bold uppercase tracking-wide">
       <slot name="title"/>

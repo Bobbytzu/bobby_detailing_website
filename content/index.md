@@ -10,13 +10,16 @@ images:
 Finest auto detailing Iasi
 
 #description
-This is a long long description
+This is a long description
 ::
 
 ::custom-separator{separator-text="Servicii Oferite"}
 ::
 
-::services{limit="2"}
+::services
+---
+limit: 2
+---
 ::
 
 ::custom-separator

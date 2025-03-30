@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+// noinspection JSUnusedGlobalSymbols
+
 import Aura from '@primeuix/themes/aura';
 import tailwindcss from "@tailwindcss/vite";
 
@@ -29,41 +31,25 @@ export default defineNuxtConfig({
             ]
         },
     },
-    $production: {
-        image: {
-            provider: 'vercel',
-        }
-    },
-    $env: {
-        staging: {
-            image: {
-                provider: 'vercel',
-            }
-        }
-    },
     devtools: {
         enabled: true,
         timeline: {
             enabled: true,
         },
     },
-    scripts: {
-        registry: {
-            googleTagManager: {
-                id: 'G-Y0NJVKM8YW'
-            }
-        }
-    },
     css: ["~/assets/css/main.css"],
     vite: {plugins: [tailwindcss(),]},
     components: true, // Ensure auto-import of components
+    image: {
+        screens:{
+            icon:70,
+            icon2x:140
+        }
+    },
     content: {
         preview: {
             api: 'https://api.nuxt.studio'
         }
-    },
-    image: {
-        provider: 'ipx', // Default provider for development
     },
     colorMode: {
         preference: 'dark', // default value of $colorMode.preference

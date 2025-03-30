@@ -4,7 +4,7 @@
         class="w-full px-15 lg:px-20 xl:px-30 py-5 flex flex-row justify-between items-center sticky top-0 bg-slate-950">
       <div class="flex flex-row items-center">
         <NuxtLink to="/">
-          <NuxtImg format="webp" sizes="xs:80px lg:120px" src="/logo.jpeg"/>
+          <NuxtImg format="webp" sizes="70px lg:140px" densities="x1 x2" src="/logo.jpeg"/>
         </NuxtLink>
       </div>
       <div class="hidden lg:flex">

@@ -37,7 +37,7 @@ const items = [
           class="w-full max-w-xs mx-auto"
           fade
       >
-        <img :src="item" class="rounded-lg" height="320" width="320">
+        <NuxtImg :alt="title" :src="item" class="rounded-lg" height="320" width="320"/>
       </UCarousel>
     </div>
 

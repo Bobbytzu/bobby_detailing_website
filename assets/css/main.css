@@ -40,6 +40,7 @@
     --ui-text: var(--color-silver-100);
     --ui-primary: var(--color-gold-600);
     --ui-secondary:var(--color-silver-400);
+    --ui-neutral:var(--color-white);
     --ui-border: var(--color-gold-600);
 }
 

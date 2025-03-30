@@ -41,7 +41,11 @@ defineProps({
       <NuxtImg
           :alt="imageAlt"
           :src="imagePath"
-          class="relative rounded-t-xl" fit="outside" format="webp" height="200" width="400"
+          class="relative rounded-t-xl"
+          fit="outside"
+          format="webp"
+          height="200"
+          width="400"
       />
       <div class="flex flex-col gap-5 pt-5">
         <p class="text-2xl font-bold text-(--ui-primary)">{{ title }}</p>

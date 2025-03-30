@@ -24,7 +24,7 @@ const displayedServices = props.limit >0 ? mdList.value?.slice(0, props.limit) :
           active active-color="primary"
           color="secondary"
           size="md"
-          to="/servicii/"
+          to="/servicii"
           trailing-icon="material-symbols:arrow-outward"
           variant="outline"
       >+ {{ mdList.length - props.limit }}

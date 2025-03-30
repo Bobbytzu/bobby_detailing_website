@@ -3,7 +3,7 @@ const props = withDefaults(defineProps<{
   images?: { src: string; alt: string }[];
 }>(), {
   images: () => [
-    { src: '/background/audi_a7_oh.jpg', alt: 'Detailing audi' }
+    {src: '/background/audi_a7_oh.jpg', alt: 'Detailing audi'}
   ],
 });
 </script>
@@ -21,16 +21,16 @@ const props = withDefaults(defineProps<{
         </div>
       </div>
 
-      <UCarousel
+      <LazyUCarousel
           v-slot="{ item }"
-          fade
-          loop
           :autoplay="{ delay: 2000 }"
           :items="props.images"
           class="w-full max-w-lg"
+          fade
+          loop
       >
-        <NuxtImg :src="item.src" :alt="item.alt" fit="cover" width="420" height="320" class="rounded-lg"/>
-      </UCarousel>
+        <NuxtImg :alt="item.alt" :src="item.src" class="rounded-lg" format="webp" fit="cover" height="320" width="420"/>
+      </LazyUCarousel>
     </div>
   </div>
 </template>

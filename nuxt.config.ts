@@ -31,18 +31,6 @@ export default defineNuxtConfig({
             ]
         },
     },
-    $production: {
-        image: {
-            provider: 'vercel',
-        }
-    },
-    $env: {
-        staging: {
-            image: {
-                provider: 'cloudinary',
-            }
-        }
-    },
     devtools: {
         enabled: true,
         timeline: {
@@ -58,8 +46,8 @@ export default defineNuxtConfig({
         }
     },
     image: {
-        cloudinary: {
-            baseURL: 'https://res.cloudinary.com/dmfrnlqsb/image/fetch'
+        screens:{
+
         }
     },
     colorMode: {

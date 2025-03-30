@@ -18,6 +18,7 @@ const {data: page} = await useAsyncData('index', () => {
         <NuxtLink to="/">Go back home</NuxtLink>
       </div>
     </template>
+
   </div>
 </template>
 

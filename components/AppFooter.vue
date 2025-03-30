@@ -3,7 +3,7 @@
     <div class="flex flex-col lg:flex-row justify-around items-center lg:items-start pt-20 bg-slate-950 pb-10 gap-5">
 
       <div class="flex flex-row lg:flex-col gap-5 lg:gap-5 lg:h-[470px] items-start justify-around">
-        <div class="flex flex-col gap-3 w-2/5 md:w-full lg:w-full">
+        <div class="flex flex-col gap-3 w-2/5 md:w-full ">
           <h6 class="text-3xl">
             Program de lucru:
           </h6>
@@ -17,45 +17,50 @@
           </ul>
         </div>
 
-        <div class="flex flex-col gap-3 w-2/5 md:w-full lg:w-full">
+        <div class="flex flex-col gap-3 w-2/5 md:w-full">
           <h6 class="text-3xl">
             Contact:
           </h6>
           <ul class="flex flex-col gap-2">
             <li class="flex flex-row items-center gap-1">
-              <Icon name="material-symbols:call"/>
+              <UIcon name="prime:phone" class="size-7"/>
               <p>Telefon: 0754 279 456</p></li>
             <li class="flex flex-row items-center gap-1">
-              <Icon name="ic:baseline-whatsapp"/>
-              <ULink as="link" color="secondary" target="_blank" to="https://wa.me/+40754279456?text=urlencodedtext">
+              <UIcon name="prime:whatsapp" class="size-7"/>
+              <NuxtLink
+                  no-prefetch
+                  target="_blank"
+                  to="https://wa.me/+40754279456?text=urlencodedtext">
                 <p>Whatsapp: 0754 279 456</p>
-              </ULink>
+              </NuxtLink>
             </li>
             <li class="flex flex-row items-center gap-1">
-              <Icon name="ic:baseline-facebook"/>
-              <ULink
-                  as="button" color="secondary" target="_blank"
+              <UIcon name="prime:facebook" class="size-7"/>
+              <NuxtLink
+                  no-prefetch
+                  target="_blank"
                   to="https://www.facebook.com/profile.php?id=100075685908141"
               >
                 <p>Facebook: Detailing Auto Iasi</p>
-              </ULink>
+              </NuxtLink>
             </li>
             <li class="flex flex-row items-center gap-1">
-              <Icon name="mdi:instagram"/>
-              <ULink
-                  as="button" color="secondary" target="_blank"
+              <UIcon name="prime:instagram" class="size-7"/>
+              <NuxtLink
+                  no-prefetch
+                  target="_blank"
                   to="https://www.instagram.com/detailing_auto_iasi/"
               >
                 <p>Instagram: Detailing Auto Iasi</p>
-              </ULink>
+              </NuxtLink>
             </li>
             <li class="flex flex-row items-center gap-1">
-              <Icon name="ic:baseline-tiktok"/>
+              <UIcon name="prime:tiktok" class="size-7"/>
               <p>TikTok:</p>
             </li>
             <li class="flex flex-row items-center gap-1">
-              <Icon name="material-symbols:alternate-email"/>
-              <p>Email:</p>
+              <UIcon name="prime:envelope" class="size-7"/>
+              <p>Email: </p>
             </li>
 
           </ul>

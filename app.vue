@@ -22,7 +22,7 @@ useHead({
   <header>
     <meta content="9tld3YqUQD16DMf3vcY349WLkMdRyFcpL_PAW36RwNs" name="google-site-verification">
   </header>
-  <LazyClientOnly>
+  <LazyClientOnly hydrate-on-idle>
     <noscript>
       <iframe
           height="0"
@@ -35,7 +35,7 @@ useHead({
   <UApp>
     <AppHeader/>
     <NuxtPage/>
-    <AppFooter/>
+    <LazyAppFooter hydrate-on-idle/>
   </UApp>
 
 </template>

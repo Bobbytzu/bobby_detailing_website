@@ -10,3 +10,13 @@ price: 805
 imageFolder: /wet_car_2.jpeg
 order: 3
 ---
+
+::service-carousel
+---
+images:
+  - src: /background/audi_a7_oh.jpg
+    alt: A beautiful sunrise
+  - src: /background/audi_rs7_inside.jpg
+    alt: A scenic mountain view
+---
+::

@@ -1,25 +1,21 @@
 ::header-carousel
 ---
 images:
-  - src: /background/audi_a7_oh.jpg
-    alt: A beautiful sunrise
   - src: /background/audi_rs7_inside.jpg
     alt: A scenic mountain view
+  - src: /background/audi_a7_oh.jpg
+    alt: A beautiful sunrise
 ---
 #title
-Finest auto detailing Iasi
 
 #description
-This is a long description
+This is a long
 ::
 
 ::custom-separator{separator-text="Servicii Oferite"}
 ::
 
-::services
----
-limit: 2
----
+::services{:limit='2'}
 ::
 
 ::custom-separator
@@ -28,17 +24,16 @@ limit: 2
 ::before-after
 ---
 image1:
-  src: /porsche_red.jpeg
+  src: /IMG_1807.jpeg
   alt: Detailing Bentley
 image2:
-  src: /porsche_blue.jpeg
+  src: /IMG_1802.jpeg
   alt: Detailing Bentley
 ---
 #title
-The Everest custom title
+Detaliile ce fac diferența
 
 #description
-This is a long long description
 ::
 
 ::custom-separator

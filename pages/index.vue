@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 const {data: page} = await useAsyncData('index', () => {
-  return queryCollection('index').path('/').first()
+  return queryCollection('mainPages').path('/').first()
 
 })
 
@@ -18,7 +18,6 @@ const {data: page} = await useAsyncData('index', () => {
         <NuxtLink to="/">Go back home</NuxtLink>
       </div>
     </template>
-
   </div>
 </template>
 

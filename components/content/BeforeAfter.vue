@@ -10,12 +10,12 @@ const props = withDefaults(defineProps<{
 
 <template>
   <div class="card flex justify-center w-2/3">
-    <LazyImageCompare class="shadow-lg rounded-2xl">
+    <LazyImageCompare>
       <template #left>
-        <NuxtImg :alt="props.image1.alt" :src="props.image1.src" format="webp"/>
+        <NuxtImg :alt="props.image1.alt" :src="props.image1.src" format="webp" lazy/>
       </template>
       <template #right>
-        <NuxtImg :alt="props.image2.alt" :src="props.image2.src" format="webp"/>
+        <NuxtImg :alt="props.image2.alt" :src="props.image2.src" format="webp" lazy/>
       </template>
     </LazyImageCompare>
   </div>
@@ -24,8 +24,8 @@ const props = withDefaults(defineProps<{
       <h3 class="text-3xl font-bold">
         <slot name="title"/>
       </h3>
-      <div>
-        <slot class="text-xl" name="description"/>
+      <div class="text-xl">
+        <slot name="description"/>
       </div>
     </section>
   </div>

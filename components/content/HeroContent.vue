@@ -29,7 +29,7 @@ const props = withDefaults(defineProps<{
           fade
           loop
       >
-        <NuxtImg :alt="item.alt" :src="item.src" class="rounded-lg" format="webp" fit="cover" height="320" width="420"/>
+        <NuxtImg :alt="item.alt" :src="item.src" class="rounded-lg" format="webp" fit="cover" height="320" width="420" lazy/>
       </LazyUCarousel>
     </div>
   </div>

@@ -1,9 +1,9 @@
 <template>
   <footer>
-    <div class="flex flex-col lg:flex-row justify-around items-center lg:items-start pt-20 bg-slate-950 pb-10 gap-5">
+    <div class="flex flex-col lg:flex-row justify-around items-center lg:items-start pt-20 px-10 bg-slate-950 pb-10 gap-5">
 
-      <div class="flex flex-row lg:flex-col gap-5 lg:gap-5 lg:h-[470px] items-start justify-around">
-        <div class="flex flex-col gap-3 w-2/5 md:w-full ">
+      <div class="w-4/5 flex flex-row lg:flex-col gap-5 lg:h-[470px] items-start justify-between lg:justify-around">
+        <div class="flex flex-col gap-3 w-2/5 lg:w-full text-nowrap">
           <h6 class="text-3xl">
             Program de lucru:
           </h6>
@@ -17,7 +17,7 @@
           </ul>
         </div>
 
-        <div class="flex flex-col gap-3 w-2/5 md:w-full">
+        <div class="flex flex-col gap-3 w-2/5 lg:w-full">
           <h6 class="text-3xl">
             Contact:
           </h6>
@@ -41,7 +41,7 @@
                   target="_blank"
                   to="https://www.facebook.com/profile.php?id=100075685908141"
               >
-                <p>Facebook: Detailing Auto Iasi</p>
+                <p>Facebook: Detailing Auto</p>
               </NuxtLink>
             </li>
             <li class="flex flex-row items-center gap-1">
@@ -51,7 +51,7 @@
                   target="_blank"
                   to="https://www.instagram.com/detailing_auto_iasi/"
               >
-                <p>Instagram: Detailing Auto Iasi</p>
+                <p>Instagram: Detailing Auto</p>
               </NuxtLink>
             </li>
             <li class="flex flex-row items-center gap-1">

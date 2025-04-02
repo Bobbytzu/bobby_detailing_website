@@ -1,31 +1,29 @@
-<template>
-  <div
-      class="max-w-3xl max-w-5xl min-h-screen
-        flex justify-center mx-auto my-12">
-    <main class="w-full">
-      <h1 class="text-2xl font-semibold mb-6">My blog page</h1>
-      <section class="space-y-4 divide-y">
-<!--        <article v-for="post of posts" :key="post.slug" class="pt-4">-->
-<!--          <h2 class="text-lg mb-2 text-blue-700hover:text-blue-800">-->
-<!--&lt;!&ndash;            <NuxtLink :to="`/blog/${post.slug}`">&ndash;&gt;-->
-<!--&lt;!&ndash;              {{ post.title }}&ndash;&gt;-->
-<!--&lt;!&ndash;            </NuxtLink>&ndash;&gt;-->
-<!--          </h2>-->
-<!--          <span>-->
-<!--            {{ post.description }}-->
-<!--          </span>-->
-<!--        </article>-->
-      </section>
-    </main>
-  </div>
-</template>
+<script lang="ts" setup>
+const blogPosts = await queryCollection('blog').order('date', 'DESC').all()
 
-<script>
-export default {
-
-}
+console.log("posts", blogPosts)
 </script>
 
-<style scoped>
+<template>
 
-</style>
+  <main class="w-full py-10 flex flex-col items-center">
+    <h1 class="text-3xl font-semibold mb-6">My blog page</h1>
+    <section class="flex flex-col gap-10">
+      <article 
+        v-for="post of blogPosts" 
+        :key="post.stem"
+        class="p-4 flex flex-row self-start gap-10 justify-evenly items-center bg-(--ui-bg-secondary) rounded-xl w-fit"
+      >
+        <h2 class="text-2xl mb-2 text-blue-700hover:text-blue-800">
+          {{ post.title }}
+        </h2>
+        <span>
+          {{ post.description }}
+        </span>
+        <UButton :to="`/${post.stem}`" size="lg" trailing-icon="i-lucide-arrow-up-right" />
+      </article>
+    </section>
+  </main>
+</template>
+
+<style scoped></style>

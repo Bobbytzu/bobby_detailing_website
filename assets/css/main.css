@@ -27,10 +27,11 @@
     --color-silver-950: #333333;
 
     --dark-bg: #091a28;
-    --dark-bg-secondary: #071521;
+    --dark-bg-secondary: #202529;
     --border-color: #0d2538;
 
     --ui-bg: var(--dark-bg);
+    --ui-bg-secondary: var(--dark-bg-secondary);
     --ui-primary: var(--color-gold-600);
     --ui-secondary:var(--color-silver-400);
 
@@ -58,3 +59,4 @@ h1, h2, h3, h4, h5, h6{
     color: var(--color-gold-600);
     text-decoration: none;
 }
+

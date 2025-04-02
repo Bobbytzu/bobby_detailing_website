@@ -7,15 +7,16 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
     compatibilityDate: '2024-11-01',
     modules: [
-        '@nuxt/ui',
-        '@nuxt/icon',
-        '@nuxtjs/color-mode',
-        '@nuxt/image',
-        '@nuxt/eslint',
-        '@nuxt/content',
-        '@nuxt/scripts',
-        '@zadigetvoltaire/nuxt-gtm',
-        '@primevue/nuxt-module'
+      '@nuxt/ui',
+      '@nuxt/content',
+      '@nuxt/icon',
+      '@nuxt/image',
+      '@nuxt/eslint',
+      '@nuxt/scripts',
+      '@nuxtjs/color-mode',
+      '@nuxtjs/html-validator',
+      '@primevue/nuxt-module',
+      '@zadigetvoltaire/nuxt-gtm',
     ],
     app: {
         head: {
@@ -51,17 +52,6 @@ export default defineNuxtConfig({
             api: 'https://api.nuxt.studio'
         }
     },
-    colorMode: {
-        preference: 'dark', // default value of $colorMode.preference
-        fallback: 'dark', // fallback value if not system preference found
-        hid: 'nuxt-color-mode-script',
-        globalName: '__NUXT_COLOR_MODE__',
-        componentName: 'ColorScheme',
-        classPrefix: '',
-        classSuffix: '-mode',
-        storage: 'localStorage', // or 'sessionStorage' or 'cookie'
-        storageKey: 'nuxt-color-mode'
-    },
     primevue: {
         options: {
             theme: {
@@ -80,8 +70,11 @@ export default defineNuxtConfig({
         public: {
             gtm: {
                 id: 'GTM-K6SQMZ8S', // Replace with your GTM ID
+                compatibility:true,
                 enabled: true, // Set to false if you want to disable it in some environments
                 debug: false, // Set to true to enable console logs for debugging
+                loadScript:true,
+                enableRouterSync: true,
             },
         },
     },

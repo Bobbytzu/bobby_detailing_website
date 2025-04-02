@@ -12,6 +12,7 @@
   "dependencies": {
     "@nuxt/image": "1.9.0",
     "@nuxt/ui": "^3.0.2",
+    "@nuxtjs/html-validator": "2.1.0",
     "@primeuix/themes": "^1.0.0",
     "@tailwindcss/vite": "^4.0.17",
     "@unhead/vue": "^2.0.2",

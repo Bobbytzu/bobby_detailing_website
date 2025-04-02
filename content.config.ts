@@ -4,9 +4,9 @@ import {defineCollection, defineContentConfig, z} from '@nuxt/content'
 
 export default defineContentConfig({
     collections: {
-        index: defineCollection({
+        mainPages: defineCollection({
             type: 'page',
-            source:'index.md',
+            source:'*.md',
         }),
         blog: defineCollection({
             type: 'page',

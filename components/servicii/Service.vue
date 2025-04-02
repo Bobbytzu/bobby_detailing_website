@@ -36,16 +36,16 @@ defineProps({
 
 <template>
   <div class="flex flex-row flex-wrap items-center justify-center gap-10 xl:gap-30">
-    <UCard class="w-[400px]" variant="soft">
+    <UCard class="w-[450px]" variant="soft">
 
       <NuxtImg
           :alt="imageAlt"
           :src="imagePath"
           class="relative rounded-t-xl"
-          fit="outside"
+          fit="cover"
           format="webp"
-          height="200"
-          width="400"
+          width="350"
+          height="300"
       />
       <div class="flex flex-col gap-5 pt-5">
         <p class="text-2xl font-bold text-(--ui-primary)">{{ title }}</p>

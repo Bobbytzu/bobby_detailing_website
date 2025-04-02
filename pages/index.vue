@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 const {data: page} = await useAsyncData('index', () => {
-  return queryCollection('index').path('/').first()
+  return queryCollection('mainPages').path('/').first()
 
 })
 

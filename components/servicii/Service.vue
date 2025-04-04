@@ -36,7 +36,7 @@ defineProps({
 
 <template>
   <div class="flex flex-row flex-wrap items-center justify-center gap-10 xl:gap-30">
-    <UCard class="w-[450px]" variant="soft">
+    <UCard class="max-w-[450px]" variant="soft">
 
       <NuxtImg
           :alt="imageAlt"
@@ -46,6 +46,7 @@ defineProps({
           format="webp"
           width="350"
           height="300"
+          lazy
       />
       <div class="flex flex-col gap-5 pt-5">
         <p class="text-2xl font-bold text-(--ui-primary)">{{ title }}</p>

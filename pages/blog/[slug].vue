@@ -1,8 +1,8 @@
 <template>
   <main class="flex flex-col p-10">
-    <h1 class="text-3xl font-bold self-center">
+    <h2 class="text-3xl font-bold self-center">
       {{ post?.title }}
-    </h1>
+    </h2>
 
     <ContentRenderer v-if="post" :value="post" class="pt-10"/>
   </main>

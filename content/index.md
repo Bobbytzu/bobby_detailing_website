@@ -39,10 +39,16 @@ Detaliile ce fac diferența
 ::custom-separator
 ::
 
+::gallery
+::
+
+::custom-separator
+::
+
 ::hero-content
 ---
 images:
-  - src: porsche_blue.jpeg
+  - src: /background/audi_a7_oh.jpg
     alt: A beautiful sunrise
   - src: /background/audi_rs7_inside.jpg
     alt: A scenic mountain view
@@ -51,5 +57,7 @@ images:
 Modul meu de lucru
 
 #description
-Cu peste un deceniu de experiență în detailing-ul auto, ofer servicii premium pentru clienții care își doresc perfecțiune, servicii la standarde înalte și nu numai. Folosesc doar echipamente moderne și de ultimă generație, împreună cu produse de top pentru a reda frumusețea și strălucirea mașinii tale.
+Cu peste un deceniu de experiență în detailing-ul auto, ofer servicii premium pentru clienții care își doresc perfecțiune, servicii la standarde înalte și nu numai. 
+
+Folosesc doar echipamente moderne și de ultimă generație, împreună cu produse de top pentru a reda frumusețea și strălucirea mașinii tale.
 ::

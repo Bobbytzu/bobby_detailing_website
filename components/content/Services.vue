@@ -13,6 +13,7 @@ const {data: mdList} = await useAsyncData(() =>
     queryCollection('services').order('order', 'ASC').all())
 
 const displayedServices = props.limit >0 ? mdList.value?.slice(0, props.limit) : mdList.value;
+const length = mdList.value.length | 0
 </script>
 
 <template>
@@ -20,14 +21,14 @@ const displayedServices = props.limit >0 ? mdList.value?.slice(0, props.limit) :
     <Service v-for="service in displayedServices" :key="service.id" v-bind="service"/>
     <div class="mt-4 text-center">
       <UButton
-          v-if="props.limit > 0"
+          v-if="props.limit > 0 && length > props.limit"
           active active-color="primary"
           color="secondary"
           size="md"
           to="/servicii"
           trailing-icon="material-symbols:arrow-outward"
           variant="outline"
-      >+ {{ mdList.length - props.limit }}
+      >+ {{ length - props.limit }}
       </UButton>
     </div>
   </div>

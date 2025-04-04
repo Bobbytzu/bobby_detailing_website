@@ -1,7 +1,6 @@
 <script lang="ts" setup>
 const {data: page} = await useAsyncData('index', () => {
   return queryCollection('mainPages').path('/').first()
-
 })
 
 </script>
@@ -13,7 +12,7 @@ const {data: page} = await useAsyncData('index', () => {
     </template>
     <template v-else>
       <div class="empty-page">
-        <h1>Page Not Found</h1>
+        <h2>Page Not Found</h2>
         <p>Oops! The content you're looking for doesn't exist.</p>
         <NuxtLink to="/">Go back home</NuxtLink>
       </div>

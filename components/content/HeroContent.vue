@@ -12,11 +12,11 @@ const props = withDefaults(defineProps<{
   <div class="w-full p-10">
     <div class="flex flex-col lg:flex-row w-4/5 items-center mx-auto">
 
-      <div class="flex flex-col align-start pr-10">
-        <h3 class="text-3xl font-bold">
-          <slot name="title"/>
-        </h3>
-        <div class="py-6">
+      <div class="flex flex-col lg:pr-10">
+        <h2 class="text-3xl font-bold self-center">
+          <slot name="title" mdc-unwrap="p"/>
+        </h2>
+        <div class="py-6 text-lg">
           <slot name="description"/>
         </div>
       </div>
@@ -25,11 +25,11 @@ const props = withDefaults(defineProps<{
           v-slot="{ item }"
           :autoplay="{ delay: 2000 }"
           :items="props.images"
-          class="w-full max-w-lg"
+          class="w-full max-w-xl"
           fade
           loop
       >
-        <NuxtImg :alt="item.alt" :src="item.src" class="rounded-lg" format="webp" fit="cover" height="320" width="420" lazy/>
+        <NuxtImg :alt="item.alt" :src="item.src" class="rounded-lg" format="webp" fit="cover" height="420" width="700" lazy/>
       </LazyUCarousel>
     </div>
   </div>

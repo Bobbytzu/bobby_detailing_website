@@ -20,7 +20,7 @@ const props = withDefaults(defineProps<{
         :ui="{ item: 'basis-2/3' }"
         class="w-full"
     >
-      <NuxtImg :src="item.src" :alt="item.alt" format="webp" width="500px" densities="x1 x2" class="rounded-lg max-h-[200px] md:max-h-[350px] lg:max-h-[450px] xl:max-h-[550px] object-cover"/>
+      <NuxtImg :src="item.src" :alt="item.alt" format="webp" width="500px" densities="x1 x2" class="rounded-lg max-h-[200px] md:max-h-[350px] lg:max-h-[450px] xl:max-h-[550px] object-cover" lazy/>
     </UCarousel>
 </template>
 

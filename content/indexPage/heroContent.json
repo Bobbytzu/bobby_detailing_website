@@ -1,0 +1,14 @@
+{
+  "title": "Modul meu de lucru",
+  "description": "Cu peste un deceniu de experiență în detailing-ul auto, ofer servicii premium pentru clienții care își doresc perfecțiune, servicii la standarde înalte și nu numai. Folosesc doar echipamente moderne și de ultimă generație, împreună cu produse de top pentru a reda frumusețea și strălucirea mașinii tale.",
+  "images": [
+    {
+      "src": "/background/audi_rs7_inside.jpg",
+      "alt": "Inainte de detailing"
+    },
+    {
+      "src": "/background/audi_a7_oh.jpg",
+      "alt": "Dupa detailing"
+    }
+  ]
+}

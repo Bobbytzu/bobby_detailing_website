@@ -1,9 +1,6 @@
 <script lang="ts" setup>
 const error = useError();
 
-console.log("Status code:",error.value?.statusCode)
-console.log("Error message:",error.value?.message)
-
 const handleError = () => {
   clearError({
     redirect: '/',

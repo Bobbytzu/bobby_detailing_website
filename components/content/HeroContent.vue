@@ -1,40 +1,42 @@
 <script lang="ts" setup>
-const props = withDefaults(defineProps<{
-  images?: { src: string; alt: string }[];
-}>(), {
-  images: () => [
-    {src: '/background/audi_a7_oh.jpg', alt: 'Detailing audi'}
-  ],
-});
+import componentData from '@/content/indexPage/heroContent.json'
+
+interface ImageItem {
+  src: string
+  alt: string
+}
+
+const images: ImageItem[] = componentData.images
+const title = componentData.title
+const description = componentData.description
+
 </script>
 
+
 <template>
-  <div class="w-full p-10">
-    <div class="flex flex-col lg:flex-row w-4/5 items-center mx-auto">
+  <article class="w-full h-full p-10 flex flex-col lg:flex-row items-center justify-center">
 
-      <div class="flex flex-col align-start pr-10">
-        <h3 class="text-3xl font-bold">
-          <slot name="title"/>
-        </h3>
-        <div class="py-6">
-          <slot name="description"/>
-        </div>
-      </div>
+    <section class="h-full flex flex-col max-w-4/5 lg:w-2/5 lg:pr-10 items-start">
+      <h2 class="text-3xl font-bold self-center">
+        {{ title }}
+      </h2>
+      <p class="py-6 text-lg">
+        {{ description }}
+      </p>
+    </section>
 
-      <LazyUCarousel
-          v-slot="{ item }"
-          :autoplay="{ delay: 2000 }"
-          :items="props.images"
-          class="w-full max-w-lg"
-          fade
-          loop
-      >
-        <NuxtImg :alt="item.alt" :src="item.src" class="rounded-lg" format="webp" fit="cover" height="320" width="420" lazy/>
-      </LazyUCarousel>
-    </div>
-  </div>
+    <UCarousel v-slot="{ item }" :autoplay="{ delay: 2000 }" :items="images" class="max-w-4/5 lg:w-2/5 flex" fade loop>
+      <NuxtImg 
+        :alt="(item as ImageItem).alt" 
+        :src="(item as ImageItem).src" 
+        class="rounded-lg" 
+        format="webp"
+        fit="cover" 
+        height="720" 
+        width="1240" />
+    </UCarousel>
+    
+  </article>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

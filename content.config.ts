@@ -15,7 +15,7 @@ export default defineContentConfig({
                 date: z.string()
             })
         }),
-        services: defineCollection({
+        servicii: defineCollection({
             type: 'page',
             source: 'servicii/*.md',
             schema: z.object({

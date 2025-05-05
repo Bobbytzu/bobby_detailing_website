@@ -4,37 +4,37 @@ const {data: mdPage} = await useAsyncData('povesteaMea', () => {
 
 })
 const page = mdPage.value
-const pageMeta = page.meta
+const pageMeta = page?.meta
 </script>
 
 <template>
   <div>
     <template v-if="page">
       <div class="flex flex-col p-10">
-        <h1 class="text-3xl font-bold">
+        <h2 class="text-3xl font-bold">
           {{page.title}}
-        </h1>
+        </h2>
         <section>
-          <h2 class="text-2xl font-bold">
-            {{pageMeta.subtitle1}}
-          </h2>
+          <h3 class="text-2xl font-bold">
+            {{pageMeta?.subtitle1}}
+          </h3>
           <p class="text-xl text-wrap">
-            {{pageMeta.description1}}
+            {{pageMeta?.description1}}
           </p>
         </section>
         <section>
-          <h2 class="text-2xl font-bold">
-            {{pageMeta.subtitle2}}
-          </h2>
+          <h3 class="text-2xl font-bold">
+            {{pageMeta?.subtitle2}}
+          </h3>
           <p class="text-xl text-wrap">
-            {{pageMeta.subtitle2}}
+            {{pageMeta?.subtitle2}}
           </p>
         </section>
       </div>
     </template>
     <template v-else>
       <div class="empty-page">
-        <h1 class="text-3xl">Pagina nu a fost gasita!</h1>
+        <h2 class="text-3xl">Pagina nu a fost gasita!</h2>
         <p class="text-xl">Puteti cere mai multe detalii la numarul de whatsapp</p>
         <NuxtLink to="/">Inapoi la pagina principala</NuxtLink>
       </div>

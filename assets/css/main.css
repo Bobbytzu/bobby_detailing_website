@@ -43,6 +43,8 @@
     --ui-secondary:var(--color-silver-400);
     --ui-neutral:var(--color-white);
     --ui-border: var(--color-gold-600);
+    
+    font-family: 'Roboto';
 }
 
 .dark-mode{

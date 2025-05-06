@@ -7,8 +7,7 @@
             no-prefetch
             target="_blank"
             to="mailto:someone@example.com">
-          <p>detailing_autoiasi@gmail.com</p>
-          <!-- TODO Change the mail -->
+          <p>bobby.auto.detailing@gmail.com</p>
         </NuxtLink>
       </li>
       <li class="pl-2 border-white border-l-2 flex flex-row items-center gap-1">
@@ -72,8 +71,7 @@
                     no-prefetch
                     target="_blank"
                     to="mailto:someone@example.com">
-                  <p>detailing_autoiasi@gmail.com</p>
-                  <!-- TODO Change the mail -->
+                  <p>bobby.auto.detailing@gmail.com</p>
                 </NuxtLink>
               </li>
               <li class="flex flex-row items-center gap-1">

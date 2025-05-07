@@ -26,7 +26,7 @@ export default defineAppConfig({
                 }
             },
             defaultVariants: {
-                variant: 'outline'
+                variant: 'soft'
             }
         },
         slideover: {

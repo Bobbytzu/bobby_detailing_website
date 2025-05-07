@@ -42,27 +42,26 @@ const remainingServices    = computed(() =>
 </script>
 
 <template>
-  <div
-    class="flex flex-wrap justify-center items-start gap-10 w-full mx-auto"
+  <section
+    class="flex flex-wrap justify-center items-center gap-10 w-full mx-auto"
   >
     <Service
-      v-for="svc in displayedServices"
-      :key="svc.id"
-      v-bind="svc"
+      v-for="serviceCard in displayedServices"
+      :key="serviceCard.id"
+      v-bind="serviceCard"
     />
 
-    <div v-if="showMoreButton" class="w-full text-center mt-6">
-      <UButton
-        active
-        active-color="primary"
-        color="secondary"
-        size="md"
-        to="/servicii"
-        trailing-icon="material-symbols:arrow-outward"
-        variant="outline"
+    <UButton
+      v-if="showMoreButton"
+      active
+      active-color="primary"
+      size="lg"
+      to="/servicii"
+      trailing-icon="material-symbols:arrow-outward"
+      variant="outline"
+      class="flex justify-center self-center w-full lg:w-fit max-w-[330px] mx-10 lg:mx-0 border-2"
       >
-        + {{ remainingServices }}
-      </UButton>
-    </div>
-  </div>
+      + {{ remainingServices }}
+    </UButton>
+  </section>
 </template>

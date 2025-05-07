@@ -36,11 +36,16 @@
         <NuxtImg 
           src="/logo.jpeg"
           alt="Booby's Auto Detailing Logo" 
+          width="70px"
+          height="70px"
           sizes="70px sm:80px md:100px lg:120px"
           format="webp" 
-          densities="x1 x2"
+          densities="x1"
           class="rounded-lg"
-          priority
+          loading="eager"
+          fetchpriority="high"
+          preload
+          :placeholder="70"
         />
         <h1 class="text-2xl md:text-3xl font-bold pl-5">
           Detailing Auto Iasi

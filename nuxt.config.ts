@@ -18,6 +18,8 @@ export default defineNuxtConfig({
       '@nuxt/eslint',
       '@nuxt/scripts',
       '@nuxtjs/html-validator',
+      '@nuxtjs/partytown',
+      '@nuxtjs/fontaine',
     ],
     app: {
         head: {
@@ -33,8 +35,15 @@ export default defineNuxtConfig({
             ]
         },
     },
+    
     nitro: {
         compressPublicAssets: true,
+    },
+    routeRules: {
+        '/':{prerender:true},
+        '/servicii/**': { prerender: true },
+        '/blog/**': { isr: true },
+        '/povestea-mea': {isr:true}
     },
     devtools: {
         enabled: true,
@@ -43,21 +52,36 @@ export default defineNuxtConfig({
         },
     },
     css: ["~/assets/css/main.css"],
-    vite: { plugins: [tailwindcss(),] },
+    vite: { 
+        plugins: [tailwindcss(),],
+        build: {
+          cssCodeSplit: true,
+          // Optimize chunk size
+          chunkSizeWarningLimit: 1000,
+          rollupOptions: {
+            output: {
+              manualChunks: {
+                // Group vendor packages to reduce requests
+                vendor: ['vue', 'vue-router'],
+                // Separate your UI framework if applicable
+                ui: ['tailwindcss', '@headlessui/vue']
+              }
+            }
+          }
+        },
+      },
     components: true, // Ensure auto-import of components
     image: {
         screens: {
             icon: 70,
             icon2x: 140,
-            default: 320,
-            xxs: 480,
-            xs: 576,
-            sm: 768,
-            md: 996,
-            lg: 1200,
-            xl: 1367,
-            xxl: 1600,
-            '4k': 1921
+            xs: 320,
+            sm: 640,
+            md: 768,
+            lg: 1024,
+            xl: 1280,
+            xxl: 1536,
+            '2xl': 1536
         },
 
         domains: ['img.youtube.com', 'i.vimeocdn.com'],

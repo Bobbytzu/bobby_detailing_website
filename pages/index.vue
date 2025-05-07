@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <main class="flex flex-col items-center w-full h-full gap-15 overflow-x-hidden">
+  <main class="flex flex-col items-center w-full h-full gap-10 lg:gap-15 overflow-x-hidden">
     
     <HeaderCarousel/>
 
@@ -12,17 +12,17 @@
     
     <Services :limit=2 />
 
-    <USeparator class="text-2xl md:text-3xl w-4/5"/>
+    <USeparator class="w-4/5"/>
 
     <BeforeAfter/>
 
-    <USeparator class="text-2xl md:text-3xl w-4/5"/>
+    <USeparator class="w-4/5"/>
 
-    <Gallery/>
+    <LazyGallery/>
 
-    <USeparator class="text-2xl md:text-3xl w-4/5"/>
+    <USeparator class="w-4/5"/>
 
-    <HeroContent/>
+    <LazyHeroContent/>
 
   </main>
 </template>

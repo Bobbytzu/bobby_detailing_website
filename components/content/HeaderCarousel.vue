@@ -10,27 +10,27 @@ const images: ImageItem[] = galleryData
 </script>
 
 <template>
-  <div class="relative w-full">
     <UCarousel
         v-slot="{ item }"
         fade
         loop
         :autoplay="{ delay: 5000 }"
         :items="images"
-        class="w-full"  
+        class="w-full"
     >
       <NuxtImg 
         :src="(item as ImageItem).src"
         :alt="(item as ImageItem).alt"
+        width="1920"
+        height="800"
+        sizes="sm:768px md:1024px lg:1920px"
+        class="rounded-lg max-h-[550px] object-cover"
         format="webp"
-        width="1920px"
-        height="800px" 
-        class="rounded-lg max-h-[550px] aspect-[2.4/1] object-cover"
-        fit="cover"
-        priority
+        loading="eager"
+        fetchpriority="high"
+        preload
       />
     </UCarousel>
-  </div>
 </template>
 
 <style scoped>

@@ -1,7 +1,7 @@
 ---
 title: Detailing Compartiment Motor
 description: ""
-shortDescription: "sdadassdasdas"
+shortDescription: sdadassdasdas
 price: 300
 imageFolder: /wet_car_2.jpeg
 order: 3

@@ -64,7 +64,7 @@ export default defineNuxtConfig({
                 // Group vendor packages to reduce requests
                 vendor: ['vue', 'vue-router'],
                 // Separate your UI framework if applicable
-                ui: ['tailwindcss', '@headlessui/vue']
+                ui: ['tailwindcss']
               }
             }
           }

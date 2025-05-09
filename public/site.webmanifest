@@ -1,6 +1,6 @@
 {
-  "name": "Detailing Auto Iasi",
-  "short_name": "Bobby's",
+  "name": "Bobby`s Detailing Auto Iasi",
+  "short_name": "Bobby DAI",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "background_color": "#000000",
   "display": "standalone"
 }

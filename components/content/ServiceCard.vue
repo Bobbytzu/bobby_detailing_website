@@ -53,7 +53,7 @@ defineProps({
 
     <template #footer>
       <section class="w-[300px] flex flex-row justify-between">
-        <h3 class="text-xl font-bold">Preț de la {{ price }}*</h3>
+        <h3 class="text-xl font-bold">Preț de la {{ price }} RON*</h3>
         <UButton
             :to="path"
             label="Vezi detalii"

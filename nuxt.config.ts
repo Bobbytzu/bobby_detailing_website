@@ -6,9 +6,10 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
     compatibilityDate: '2024-11-01',
+
+    // Module
     modules: [
       '@nuxtjs/seo',
-      '@nuxt/content',
       '@nuxt/ui',
       '@nuxt/image',
       '@nuxtjs/color-mode',
@@ -20,22 +21,44 @@ export default defineNuxtConfig({
       '@nuxtjs/html-validator',
       '@nuxtjs/partytown',
       '@nuxtjs/fontaine',
+      '@nuxtjs/sitemap', 
+      '@nuxt/content',
+      '@nuxtjs/robots'
     ],
+
+    // Starting SEO
+     site: {  
+        url: 'https://detailingautoiasi.ro',  
+        name: 'Bobby`s Detailing Auto Iasi'  
+    }, 
     app: {
         head: {
-            title: 'Bobby`s Auto Detailing Iasi',
+            charset: 'utf-8',
+            viewport: 'width=device-width, initial-scale=1',
+            title: 'Serviciu Profesional De Detailing Auto | Bobby`s Detailing Auto Iasi',
+            meta:[
+                {name: 'description', content:'Servicii profesionale de detailing auto in Iasi. Interior, exterior, polish, faruri si mai multe.'},
+                {name:'robots', content:'index, follow'},
+                {property:'og:title', content: 'Bobby`s Detailing Auto Iasi - Servicii Profesionale'},
+                {property:'og:description', content:'Servicii premium ce asigura calitate superioara pentru orice tip de masina.'},
+                {property:'og:type', content:'website'},
+                {property:'og:url', content:'https://detailingautoiasi.ro/'},
+                {property:'og:image', content:'https://detailingautoiasi.ro/og-image.jpeg'},
+            ],
             htmlAttrs: {
                 lang: 'ro',
             },
             link: [
+                { rel: 'canonical', href: 'https://detailingautoiasi.ro/' },
                 { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
                 { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
                 { rel: 'icon', type: 'image/png', sizes: '96x96', href: '/favicon-96x96.png' },
                 { rel: 'manifest', href: '/site.webmanifest' },
-            ]
+            ],
         },
     },
-    
+   
+    //Configurations
     nitro: {
         compressPublicAssets: true,
     },
@@ -43,7 +66,8 @@ export default defineNuxtConfig({
         '/':{prerender:true},
         '/servicii/**': { prerender: true },
         '/blog/**': { isr: true },
-        '/povestea-mea': {isr:true}
+        '/povestea-mea': {isr:true},
+        '/sitemap.xml': { prerender: true }
     },
     devtools: {
         enabled: true,

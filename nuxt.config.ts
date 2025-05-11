@@ -26,16 +26,19 @@ export default defineNuxtConfig({
       '@nuxtjs/robots'
     ],
 
+    buildModules: [
+        '@unlighthouse/nuxt',
+    ],
+
     // Starting SEO
      site: {  
-        url: 'https://detailingautoiasi.ro',  
-        name: 'Bobby`s Detailing Auto Iasi'  
+        url: 'https://detailingautoiasi.ro'
     }, 
     app: {
         head: {
             charset: 'utf-8',
             viewport: 'width=device-width, initial-scale=1',
-            title: 'Serviciu Profesional De Detailing Auto | Bobby`s Detailing Auto Iasi',
+            title: 'Bobby`s Detailing Auto Iasi',
             meta:[
                 {name: 'description', content:'Servicii profesionale de detailing auto in Iasi. Interior, exterior, polish, faruri si mai multe.'},
                 {name:'robots', content:'index, follow'},

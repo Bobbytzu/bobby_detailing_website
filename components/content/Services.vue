@@ -43,7 +43,7 @@ const remainingServices    = computed(() =>
 
 <template>
   <section
-    class="flex flex-wrap justify-center items-center gap-10 w-full mx-auto"
+    class="flex flex-wrap justify-center items-center gap-10 w-full lg:w-3/4 mx-auto"
   >
     <Service
       v-for="serviceCard in displayedServices"

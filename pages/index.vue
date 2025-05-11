@@ -25,26 +25,6 @@
 
     <LazyHeroContent/>
 
-
-    <script type="application/ld+json">
-      {{
-        JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "AutoRepair",
-          "name": "Bobby`s Detailing Auto Iasi",
-          "image": "https://detailingautoiasi.ro/logo.jpg",
-          "url": "https://detailingautoiasi.ro",
-          "telephone": "+40754279456",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Str. George Calinescu Nr.3",
-            "addressLocality": "Iasi",
-            "addressCountry": "RO"
-          },
-          "openingHours": "Mo-Sa 08:00-19:00"
-        })
-      }}
-    </script>
   </main>
 </template>
 

@@ -53,7 +53,9 @@ defineProps({
 
     <template #footer>
       <section class="w-[300px] flex flex-row justify-between">
-        <h3 class="text-xl font-bold">Preț de la {{ price }} RON*</h3>
+        <UTooltip text="Preturile pot varia in functie de dimensiunile masinii.">
+          <h3 class="text-xl font-bold">Preț de la {{ price }}*</h3>
+        </UTooltip>
         <UButton
             :to="path"
             label="Vezi detalii"

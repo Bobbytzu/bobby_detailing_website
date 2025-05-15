@@ -1,5 +1,10 @@
 <script lang="ts" setup>
-
+useHead({
+  meta:[{
+    name:"google-site-verification",
+    content:"67z82ndYGm_159YUwCy2sI-NgzECjzJFRhjDaqi9QRk"
+  }]
+})
 </script>
 
 <template>
